@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0d14" />
+  <meta name="description" content="Luma Jury — проверь идею на людях до запуска. Слепые сравнения, честные мнения и аргументы." />
+  <title>Luma Jury — Inside Luma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>window.LUMA_CONFIG={SUPABASE_URL:"",SUPABASE_ANON_KEY:"",TELEGRAM_BOT_USERNAME:"",TELEGRAM_APP_SHORT_NAME:""};</script>
+  <style>
+:root{--bg:#0b0d14;--panel:#121723;--panel2:#171e2c;--line:rgba(222,232,255,.11);--text:#f4f6fb;--muted:#8d98ac;--mint:#9ff3d4;--mint2:#6eddb6;--violet:#aaa4ff;--pink:#ffb2d4;--yellow:#eddb83;--danger:#ff8d9b;--mono:'DM Mono',monospace;--sans:'Manrope',sans-serif;--radius:22px; color-scheme:dark}
+*{box-sizing:border-box}html{background:var(--bg);scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 77% 3%,rgba(90,89,173,.16),transparent 33rem),radial-gradient(ellipse at 6% 35%,rgba(59,152,127,.09),transparent 28rem),var(--bg);color:var(--text);font-family:var(--sans);font-size:14px;line-height:1.55;min-height:100vh}button,input,textarea{font:inherit}button{cursor:pointer;color:inherit}a{color:inherit;text-decoration:none}.app-shell{max-width:1200px;margin:0 auto;padding:0 34px}.topbar{height:78px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:13px}.brand-mark{width:32px;height:32px;display:flex;gap:3px;align-items:center;justify-content:center;border:1px solid rgba(159,243,212,.3);border-radius:11px;transform:rotate(0deg)}.brand-mark span{width:4px;border-radius:4px;background:var(--mint);display:block}.brand-mark span:nth-child(1){height:13px;opacity:.6}.brand-mark span:nth-child(2){height:20px}.brand-mark span:nth-child(3){height:15px;background:var(--violet)}.brand-copy{display:flex;flex-direction:column;line-height:1.1;gap:5px}.brand-copy b{font-size:12px;letter-spacing:.17em;font-weight:800}.brand-copy small{font:9px var(--mono);letter-spacing:.1em;color:var(--muted)}.topbar-right{display:flex;align-items:center;gap:15px}.mode-pill{border:1px solid rgba(237,219,131,.25);background:rgba(237,219,131,.07);color:var(--yellow);border-radius:40px;padding:6px 10px;font:9px var(--mono);letter-spacing:.14em;display:flex;align-items:center;gap:7px}.mode-pill i{width:6px;height:6px;border-radius:50%;background:var(--yellow);box-shadow:0 0 9px var(--yellow)}.mode-pill.live{border-color:rgba(159,243,212,.25);background:rgba(159,243,212,.07);color:var(--mint)}.mode-pill.live i{background:var(--mint);box-shadow:0 0 9px var(--mint)}.footer-links{display:flex;gap:13px;flex-wrap:wrap}.avatar-button{height:35px;width:35px;border-radius:50%;border:1px solid rgba(159,243,212,.4);background:linear-gradient(135deg,rgba(159,243,212,.22),rgba(170,164,255,.22));font-weight:800;color:var(--mint)}.main-content{padding-bottom:76px}.view{display:none;padding-top:30px;animation:fade .24s ease}.view.active{display:block}@keyframes fade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;min-height:445px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}.hero-copy{padding:32px 0 48px;position:relative;z-index:2}.eyebrow{font:10px var(--mono);letter-spacing:.17em;color:var(--mint);display:flex;align-items:center;gap:9px}.eyebrow-line{width:26px;height:1px;background:var(--mint);opacity:.6}.eyebrow-dot{width:5px;height:5px;border-radius:50%;background:var(--violet);box-shadow:0 0 8px var(--violet)}h1,h2,h3,p{margin-top:0}.hero-copy h1,.page-heading h1{font-size:clamp(42px,6vw,72px);letter-spacing:-.065em;line-height:.99;font-weight:700;margin:22px 0 19px}.hero-copy h1 em,.page-heading h1 em{font-style:normal;color:var(--mint)}.hero-lead{font-size:15px;max-width:490px;color:#aab4c5;line-height:1.75;margin:0 0 25px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn{border:0;border-radius:13px;padding:13px 17px;font-weight:700;font-size:12px;display:inline-flex;align-items:center;justify-content:center;gap:18px;transition:transform .16s ease,filter .16s ease,background .16s ease}.btn:hover{transform:translateY(-1px);filter:brightness(1.08)}.btn:disabled{opacity:.45;cursor:not-allowed;transform:none;filter:none}.btn-primary{color:#09130f;background:linear-gradient(135deg,#a6f5d6,#7ae1bc);box-shadow:0 8px 28px rgba(110,221,182,.13)}.btn-primary span{font-size:16px;font-weight:500}.btn-quiet{color:#ccd4e2;background:transparent;border:1px solid var(--line)}.btn-secondary{background:rgba(159,243,212,.11);border:1px solid rgba(159,243,212,.22);color:var(--mint)}.btn-wide{width:100%;padding:16px}.hero-proof{display:flex;gap:10px;align-items:center;margin-top:37px}.proof-icon{height:28px;width:28px;border-radius:9px;background:rgba(170,164,255,.12);color:var(--violet);display:grid;place-items:center;font-size:17px}.hero-proof span:last-child{display:flex;flex-direction:column;gap:1px}.hero-proof b{font-size:11px}.hero-proof small{font-size:10px;color:var(--muted)}.hero-art{height:390px;position:relative;display:grid;place-items:center;isolation:isolate}.hero-art:before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(118,236,197,.17),rgba(125,118,238,.08) 47%,transparent 72%);filter:blur(14px);z-index:-1}.orbit{position:absolute;border:1px solid rgba(167,193,255,.13);border-radius:50%;transform:rotate(-24deg)}.orbit-one{width:330px;height:185px}.orbit-two{width:390px;height:228px;transform:rotate(47deg);border-color:rgba(159,243,212,.1)}.prism{width:150px;height:178px;position:relative;filter:drop-shadow(0 0 40px rgba(141,211,255,.17));transform:rotate(7deg)}.prism:before{content:"";position:absolute;inset:0;background:linear-gradient(142deg,rgba(159,243,212,.4),rgba(170,164,255,.1) 55%,rgba(255,178,212,.27));clip-path:polygon(50% 0,100% 81%,50% 100%,0 81%);border:1px solid rgba(222,245,255,.5)}.prism-face{position:absolute;inset:2px;background:linear-gradient(160deg,rgba(245,255,255,.38),rgba(91,116,154,.05));clip-path:polygon(50% 0,100% 81%,50% 100%,0 81%)}.face-a{background:linear-gradient(125deg,rgba(159,243,212,.42),rgba(117,123,224,.05));clip-path:polygon(50% 0,50% 100%,0 81%)}.face-b{background:linear-gradient(210deg,rgba(255,178,212,.33),rgba(170,164,255,.05));clip-path:polygon(50% 0,100% 81%,50% 100%)}.prism-core{position:absolute;width:9px;height:9px;top:46%;left:47%;border-radius:50%;background:#f4fffb;box-shadow:0 0 26px 10px rgba(159,243,212,.7)}.float-tag{position:absolute;border:1px solid rgba(214,232,255,.13);background:rgba(16,22,34,.75);backdrop-filter:blur(10px);padding:8px 11px;border-radius:8px;font:9px var(--mono);letter-spacing:.09em;color:#bbc7d8}.tag-top{top:74px;right:34px}.tag-bottom{bottom:64px;left:32px}.tag-dot{height:6px;width:6px;display:inline-block;border-radius:50%;margin-right:7px}.mint{background:var(--mint);box-shadow:0 0 8px var(--mint)}.violet{background:var(--violet);box-shadow:0 0 8px var(--violet)}.hero-index{position:absolute;bottom:21px;right:10px;font:10px var(--mono);color:var(--mint)}.hero-index span{color:var(--muted)}.value-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:23px 0 26px;border-bottom:1px solid var(--line)}.value-item{display:flex;gap:13px;align-items:flex-start}.value-number{font:10px var(--mono);color:var(--violet);padding-top:3px}.value-item div{display:flex;flex-direction:column;gap:3px}.value-item b{font-size:11px}.value-item small{font-size:10px;color:var(--muted)}.section-block{padding:53px 0 28px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:19px}.section-heading h2{margin:7px 0 0;font-size:28px;letter-spacing:-.045em}.text-button{border:0;background:transparent;color:var(--mint);font-size:11px;font-weight:700;padding:7px 0}.text-button span{font-size:16px;margin-left:8px}.category-row{display:flex;gap:8px;overflow:auto;padding:2px 0 18px;scrollbar-width:none}.category-row::-webkit-scrollbar{display:none}.category-chip{white-space:nowrap;border:1px solid var(--line);color:#9faabc;background:rgba(255,255,255,.015);border-radius:30px;padding:8px 14px;font-size:10px}.category-chip.selected{color:var(--mint);border-color:rgba(159,243,212,.38);background:rgba(159,243,212,.09)}.test-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.test-card{border:1px solid var(--line);border-radius:17px;padding:17px;background:linear-gradient(150deg,rgba(24,31,47,.95),rgba(16,20,30,.96));position:relative;overflow:hidden;min-height:177px;display:flex;flex-direction:column;gap:13px;transition:border-color .2s,transform .2s}.test-card:hover{border-color:rgba(159,243,212,.32);transform:translateY(-2px)}.test-card:after{content:"";position:absolute;right:-40px;top:-50px;width:125px;height:125px;background:radial-gradient(circle,rgba(159,243,212,.09),transparent 70%);pointer-events:none}.card-top{display:flex;justify-content:space-between;gap:10px;align-items:center}.card-category{font:9px var(--mono);letter-spacing:.1em;color:var(--mint);text-transform:uppercase}.card-status{font:9px var(--mono);color:var(--muted);border:1px solid var(--line);padding:4px 7px;border-radius:20px}.test-card h3{font-size:15px;line-height:1.4;letter-spacing:-.02em;margin:0;max-width:90%}.test-card p{font-size:10px;line-height:1.5;color:var(--muted);margin:0}.card-options{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:auto}.card-option{border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.025);border-radius:9px;padding:8px;font-size:10px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.card-option span{font:9px var(--mono);color:var(--violet);margin-right:5px}.card-footer{display:flex;align-items:center;justify-content:space-between;color:var(--muted);font:9px var(--mono)}.card-open{color:var(--mint);font:10px var(--sans);font-weight:700}.editorial-note{border:1px solid rgba(170,164,255,.2);background:linear-gradient(110deg,rgba(105,100,170,.12),rgba(18,23,35,.25));border-radius:18px;padding:18px;display:flex;align-items:center;gap:15px;margin:34px 0 38px}.note-avatar{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;color:#101720;background:linear-gradient(140deg,var(--mint),#c1e9ff);font-size:17px;font-weight:800;flex:none}.note-copy{flex:1}.voice-label{font:9px var(--mono);letter-spacing:.14em;color:var(--mint)}.note-copy p,.note-pair p{font-size:11px;color:#c2ccda;margin:5px 0 0;line-height:1.7}.note-mark{font:700 22px var(--mono);color:rgba(170,164,255,.55)}.site-footer{border-top:1px solid var(--line);padding:22px 0 30px;display:flex;justify-content:space-between;gap:15px;align-items:center;color:#677285;font:9px var(--mono);letter-spacing:.06em}.site-footer a{color:#9eabc0}.empty-state{text-align:center;padding:50px 18px;border:1px dashed var(--line);border-radius:18px}.empty-symbol{font-size:32px;color:var(--mint)}.empty-state b{font-size:15px}.empty-state p{color:var(--muted);font-size:11px}.hidden{display:none!important}.page-heading{padding:15px 0 25px}.page-heading .back-button{margin-bottom:30px}.page-heading h1{font-size:clamp(39px,5vw,57px);margin:17px 0 12px}.page-heading>p{color:var(--muted);font-size:13px;max-width:560px}.page-heading.compact{padding-bottom:20px}.back-button{border:0;background:transparent;color:#aab5c6;padding:0;font-size:11px}.form-card{max-width:760px;margin:0 auto 50px;padding:28px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(150deg,rgba(20,27,41,.95),rgba(13,17,26,.96));box-shadow:0 18px 60px rgba(0,0,0,.18)}.form-step{display:flex;align-items:flex-start;gap:12px;margin-bottom:17px}.form-step>span{font:10px var(--mono);color:var(--mint);border:1px solid rgba(159,243,212,.24);border-radius:7px;padding:5px 7px}.form-step div{display:flex;flex-direction:column;gap:3px}.form-step b{font-size:12px}.form-step small{font-size:10px;color:var(--muted)}.step-gap{margin-top:31px}.category-select{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:22px}.category-option{font-size:10px;color:#aab4c5;background:rgba(255,255,255,.025);border:1px solid var(--line);border-radius:9px;padding:8px 10px}.category-option.selected{color:var(--mint);background:rgba(159,243,212,.09);border-color:rgba(159,243,212,.4)}.field-label,.reason-wrap label{font:9px var(--mono);letter-spacing:.1em;color:#b8c3d3;display:flex;justify-content:space-between;gap:10px;margin:16px 0 8px}.field-label span,.reason-wrap label span{color:#6c788d;font-size:8px}.form-card input,.form-card textarea,.modal input,.modal textarea,.reason-wrap textarea{display:block;width:100%;border-radius:10px;border:1px solid var(--line);background:rgba(5,9,16,.5);padding:12px 13px;color:var(--text);outline:none;font-size:12px;resize:vertical}.form-card input:focus,.form-card textarea:focus,.modal input:focus,.reason-wrap textarea:focus{border-color:rgba(159,243,212,.5);box-shadow:0 0 0 3px rgba(159,243,212,.06)}input::placeholder,textarea::placeholder{color:#687589}.field-meta{display:flex;justify-content:space-between;gap:12px;color:#687589;font-size:9px;margin-top:5px}.option-fields{display:grid;grid-template-columns:1fr 35px 1fr;align-items:center;gap:10px}.option-input{border:1px solid rgba(159,243,212,.16);background:rgba(159,243,212,.035);border-radius:13px;padding:12px;display:block;position:relative}.option-input:focus-within{border-color:rgba(159,243,212,.5)}.option-letter{font:14px var(--mono);color:var(--mint);display:inline-block;margin-right:8px}.option-b{color:var(--violet)}.option-caption{font:8px var(--mono);letter-spacing:.08em;color:var(--muted)}.option-input input{border:0;background:transparent;padding:12px 0 2px;font-size:12px;box-shadow:none!important}.vs-divider{text-align:center;font:10px var(--mono);color:#657186}.target-options{display:flex;gap:8px}.target-options button{flex:1;border:1px solid var(--line);background:rgba(255,255,255,.02);color:#a7b1c1;border-radius:9px;padding:10px 8px;font-size:10px}.target-options button.selected{border-color:rgba(159,243,212,.45);background:rgba(159,243,212,.09);color:var(--mint)}.blind-note{display:flex;align-items:center;gap:11px;padding:12px 13px;border-radius:11px;border:1px solid rgba(170,164,255,.19);background:rgba(170,164,255,.06);margin:22px 0}.blind-note>span{color:var(--violet);font-size:18px}.blind-note div{display:flex;flex-direction:column;gap:2px}.blind-note b{font-size:10px}.blind-note small{font-size:9px;color:var(--muted)}.form-disclaimer{font-size:9px;line-height:1.6;color:#687589;text-align:center;margin:12px 0 0}.form-error{background:rgba(255,141,155,.08);border:1px solid rgba(255,141,155,.22);color:#ffb0bb;border-radius:9px;padding:10px 12px;font-size:10px;margin:12px 0}.blind-banner{display:flex;gap:12px;align-items:center;padding:12px 15px;border:1px solid rgba(170,164,255,.2);border-radius:13px;background:rgba(170,164,255,.07);margin-bottom:16px}.blind-banner>span{font-size:19px;color:var(--violet)}.blind-banner div{display:flex;flex-direction:column;gap:1px}.blind-banner b{font-size:11px}.blind-banner small{color:var(--muted);font-size:9px}.vote-options{display:grid;grid-template-columns:1fr 1fr;gap:13px}.vote-option{min-height:170px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(26,34,52,.9),rgba(15,20,30,.96));border-radius:18px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;text-align:left;transition:.18s}.vote-option:hover{border-color:rgba(159,243,212,.35)}.vote-option.selected{border-color:var(--mint);box-shadow:inset 0 0 0 1px rgba(159,243,212,.4),0 0 30px rgba(159,243,212,.06)}.vote-option .big-letter{font:28px var(--mono);color:var(--mint)}.vote-option:nth-child(2) .big-letter{color:var(--violet)}.vote-option .option-text{font-size:16px;font-weight:700;line-height:1.4}.vote-option .choose-hint{font:9px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.1em}.reason-wrap{margin:22px 0}.reason-wrap textarea{max-width:100%;min-height:75px}.results-card{margin-top:22px;border:1px solid rgba(159,243,212,.22);border-radius:18px;background:rgba(159,243,212,.045);padding:20px}.results-card h3{margin:0 0 12px;font-size:17px}.result-row{display:grid;grid-template-columns:25px 1fr 42px;align-items:center;gap:10px;margin:12px 0;font:11px var(--mono)}.result-track{height:8px;border-radius:20px;background:rgba(255,255,255,.08);overflow:hidden}.result-fill{height:100%;background:linear-gradient(90deg,var(--mint),#70badd);border-radius:20px}.result-row:nth-of-type(2) .result-fill{background:linear-gradient(90deg,var(--violet),#d5a6ff)}.result-count{font:9px var(--mono);color:var(--muted)}.reason-list{border-top:1px solid var(--line);padding-top:13px;margin-top:15px}.reason-list b{font-size:10px}.reason-item{font-size:10px;line-height:1.6;color:#aeb9ca;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.05)}.sample-warning{color:var(--yellow);font-size:9px;margin:13px 0 0}.profile-panel{border:1px solid var(--line);border-radius:18px;padding:20px;background:linear-gradient(120deg,rgba(159,243,212,.07),rgba(170,164,255,.06));display:flex;align-items:center;gap:16px}.profile-badge{height:52px;width:52px;display:grid;place-items:center;border-radius:50%;font-weight:800;font-size:20px;background:linear-gradient(140deg,var(--mint),var(--violet));color:#10151f}.profile-details{flex:1}.profile-details b{font-size:15px}.profile-details small{display:block;color:var(--muted);font-size:10px}.profile-stats{display:flex;gap:18px;margin-left:auto}.profile-stat{text-align:center}.profile-stat b{display:block;font:20px var(--mono);color:var(--mint)}.profile-stat small{font-size:8px;color:var(--muted)}.profile-section-heading{margin:34px 0 15px}.profile-section-heading h2{font-size:21px}.about-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0 22px}.about-card{border:1px solid var(--line);background:rgba(255,255,255,.02);border-radius:15px;padding:17px}.about-index{font:8px var(--mono);letter-spacing:.12em;color:var(--mint)}.about-card h3{font-size:14px;margin:17px 0 7px}.about-card p{font-size:10px;line-height:1.75;color:var(--muted);margin:0}.note-pair{display:flex;gap:12px;align-items:flex-start;padding:14px 0;border-top:1px solid var(--line)}.note-pair .note-avatar{height:31px;width:31px;font-size:13px}.note-pair.kitara .note-avatar{background:linear-gradient(140deg,var(--pink),var(--violet))}.note-pair.kitara .voice-label{color:var(--pink)}.modal{width:min(540px,calc(100% - 28px));border:1px solid rgba(210,225,255,.17);border-radius:21px;background:#111723;color:var(--text);padding:22px;box-shadow:0 30px 100px rgba(0,0,0,.6)}.modal::backdrop{background:rgba(3,5,10,.78);backdrop-filter:blur(6px)}.modal-header{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}.modal-header h2{margin:5px 0 0;font-size:22px;letter-spacing:-.04em}.icon-close{border:1px solid var(--line);background:transparent;border-radius:50%;height:30px;width:30px;font-size:19px;color:#aeb9ca}.modal-copy{font-size:10px;color:var(--muted);margin:13px 0 17px}.preview-content{padding:15px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.025)}.preview-content h3{font-size:15px}.preview-options{display:grid;grid-template-columns:1fr 1fr;gap:8px}.preview-option{border:1px solid var(--line);border-radius:8px;padding:10px;font-size:10px}.preview-option b{display:block;font:10px var(--mono);color:var(--mint);margin-bottom:5px}.modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}.auth-tabs{display:flex;gap:7px;margin:15px 0}.auth-tabs button{background:transparent;border:1px solid var(--line);border-radius:8px;padding:8px 14px;font-size:10px;color:var(--muted)}.auth-tabs button.selected{background:rgba(159,243,212,.08);border-color:rgba(159,243,212,.4);color:var(--mint)}.auth-modal .field-label{margin-top:13px}.toast-dialog{position:fixed;bottom:95px;left:50%;transform:translateX(-50%);border:1px solid rgba(159,243,212,.25);border-radius:12px;background:#17212a;color:#e3fff4;padding:12px 14px;box-shadow:0 10px 40px #0008;max-width:calc(100% - 30px);font-size:11px}.toast-dialog::backdrop{background:transparent}.toast-dialog button{border:0;background:none;color:var(--mint);margin-left:10px}.bottom-nav{display:none}
+@media(max-width:780px){.app-shell{padding:0 19px}.topbar{height:68px}.main-content{padding-bottom:95px}.hero-grid{grid-template-columns:1fr;min-height:0}.hero-copy{padding:35px 0 7px}.hero-copy h1{font-size:clamp(44px,12vw,64px);margin-top:18px}.hero-lead{font-size:13px;max-width:440px}.hero-proof{margin-top:25px}.hero-art{height:240px;margin-top:0}.hero-art:before{width:230px;height:230px}.prism{transform:scale(.75) rotate(7deg)}.orbit-one{width:270px;height:145px}.orbit-two{width:300px;height:175px}.tag-top{top:25px;right:9px}.tag-bottom{bottom:23px;left:4px}.hero-index{bottom:4px}.value-strip{gap:10px;padding:18px 0;grid-template-columns:1fr}.value-item{gap:10px}.value-item small{font-size:9px}.section-block{padding:36px 0 23px}.section-heading h2{font-size:24px}.test-grid{grid-template-columns:1fr}.test-card{min-height:160px}.editorial-note{margin:25px 0 28px}.site-footer{flex-wrap:wrap;font-size:8px}.page-heading{padding-top:5px}.page-heading .back-button{margin-bottom:25px}.form-card{padding:19px;margin-bottom:25px}.option-fields{grid-template-columns:1fr;gap:7px}.vs-divider{font-size:8px}.option-input{display:grid;grid-template-columns:25px 1fr;align-items:center}.option-input input{grid-column:1/-1}.target-options{gap:6px}.target-options button{font-size:9px}.vote-options{gap:8px}.vote-option{min-height:150px;padding:13px}.vote-option .option-text{font-size:14px}.profile-panel{align-items:flex-start;flex-wrap:wrap}.profile-stats{width:100%;margin:0;justify-content:space-around}.about-cards{grid-template-columns:1fr}.bottom-nav{position:fixed;display:grid;grid-template-columns:repeat(3,1fr);bottom:0;left:0;right:0;padding:9px 17px calc(9px + env(safe-area-inset-bottom));background:rgba(10,13,21,.92);backdrop-filter:blur(18px);border-top:1px solid var(--line);z-index:20}.nav-item{display:flex;flex-direction:column;align-items:center;gap:2px;background:transparent;border:0;color:#738096;padding:3px}.nav-item span{font-size:18px}.nav-item small{font-size:8px}.nav-item.active{color:var(--mint)}.modal{padding:18px}.modal-actions{flex-direction:column-reverse}.modal-actions .btn{width:100%}}
+@media(min-width:781px) and (max-width:980px){.app-shell{padding:0 24px}.hero-copy h1{font-size:57px}.hero-art{transform:scale(.85)}.test-grid{grid-template-columns:1fr 1fr}}
+
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Inside Luma — главная">
+        <span class="brand-mark"><span></span><span></span><span></span></span>
+        <span class="brand-copy"><b>INSIDE LUMA</b><small>JURY / RESEARCH STUDIO</small></span>
+      </a>
+      <div class="topbar-right">
+        <span id="modePill" class="mode-pill"><i></i> DEMO</span>
+        <button id="profileBtn" class="avatar-button" aria-label="Профиль">Г</button>
+      </div>
+    </header>
+
+    <main id="app" class="main-content">
+      <section id="homeView" class="view active">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-line"></span> HUMAN DECISION LAB <span class="eyebrow-dot"></span> BETA 0.1</div>
+            <h1>Не гадай.<br/><em>Проверь на людях.</em></h1>
+            <p class="hero-lead">Покажи два варианта. Получи честный выбор и причины. До того, как потратишь деньги или выпустишь идею в мир.</p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" id="createHeroBtn">Проверить идею <span>↗</span></button>
+              <button class="btn btn-quiet" id="howBtn">Как это работает <span>↓</span></button>
+            </div>
+            <div class="hero-proof"><span class="proof-icon">✳</span><span><b>Слепое сравнение</b><small>Без лайков автора и подсказки, что лучше</small></span></div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="prism"><div class="prism-face face-a"></div><div class="prism-face face-b"></div><div class="prism-core"></div></div>
+            <div class="float-tag tag-top"><span class="tag-dot mint"></span> HUMAN SIGNAL</div>
+            <div class="float-tag tag-bottom"><span class="tag-dot violet"></span> NO GUESSWORK</div>
+            <div class="hero-index">01<span> / 03</span></div>
+          </div>
+        </div>
+
+        <div class="value-strip" id="howSection">
+          <div class="value-item"><span class="value-number">01</span><div><b>Загрузи варианты</b><small>Название, дизайн, реклама или продукт</small></div></div>
+          <div class="value-item"><span class="value-number">02</span><div><b>Собери мнения</b><small>Люди выбирают вслепую и объясняют почему</small></div></div>
+          <div class="value-item"><span class="value-number">03</span><div><b>Прими решение</b><small>Смотри на выбор и аргументы, а не на догадки</small></div></div>
+        </div>
+
+        <section class="section-block">
+          <div class="section-heading">
+            <div><div class="eyebrow">THE JURY ROOM</div><h2>Что проверяют люди</h2></div>
+            <button class="text-button" id="showAllBtn">Все тесты <span>→</span></button>
+          </div>
+          <div class="category-row" id="categoryRow">
+            <button class="category-chip selected" data-category="all">Все</button>
+            <button class="category-chip" data-category="design">Дизайн</button>
+            <button class="category-chip" data-category="name">Название</button>
+            <button class="category-chip" data-category="ad">Реклама</button>
+            <button class="category-chip" data-category="product">Продукт</button>
+            <button class="category-chip" data-category="price">Цена</button>
+          </div>
+          <div id="feed" class="test-grid"></div>
+          <div id="feedEmpty" class="empty-state hidden"><div class="empty-symbol">◎</div><b>Пока тихо</b><p>Создай первый тест или выбери другую категорию.</p><button class="btn btn-secondary" id="emptyCreateBtn">Создать тест</button></div>
+        </section>
+        <section class="editorial-note">
+          <div class="note-avatar">L</div>
+          <div class="note-copy"><span class="voice-label">ЛЮМА / АНАЛИТИК</span><p>«Один голос — это мнение. Десять — уже повод присмотреться. Но не путай маленькую выборку с целым рынком».</p></div>
+          <div class="note-mark">IL.</div>
+        </section>
+        <footer class="site-footer"><span>INSIDE LUMA © 2026</span><span>REAL PEOPLE. HONEST SIGNAL.</span><span class="footer-links"><a href="#about" id="aboutLink">О бете</a><a href="privacy.html" target="_blank" rel="noopener">Конфиденциальность</a><a href="rules.html" target="_blank" rel="noopener">Правила</a></span></footer>
+      </section>
+
+      <section id="createView" class="view">
+        <div class="page-heading"><button class="back-button" data-back="home">← Назад</button><div class="eyebrow">CREATE / A BLIND TEST</div><h1>Вынеси идею<br/><em>на суд людей.</em></h1><p>Один вопрос. Два варианта. Никаких подсказок, какой из них твой фаворит.</p></div>
+        <form id="createForm" class="form-card">
+          <div class="form-step"><span>01</span><div><b>О чём тест?</b><small>Выбери категорию и сформулируй вопрос</small></div></div>
+          <div class="category-select" id="createCategories">
+            <button type="button" class="category-option selected" data-category="design">✳ Дизайн</button>
+            <button type="button" class="category-option" data-category="name">Aa Название</button>
+            <button type="button" class="category-option" data-category="ad">↗ Реклама</button>
+            <button type="button" class="category-option" data-category="product">◇ Продукт</button>
+            <button type="button" class="category-option" data-category="price">₽ Цена</button>
+            <button type="button" class="category-option" data-category="other">＋ Другое</button>
+          </div>
+          <label class="field-label" for="question">Что хочешь узнать? <span>ОБЯЗАТЕЛЬНО</span></label>
+          <input id="question" maxlength="120" minlength="8" placeholder="Какой вариант вызывает больше доверия?" required />
+          <div class="field-meta"><span>Сформулируй вопрос нейтрально</span><span id="questionCount">0 / 120</span></div>
+          <label class="field-label" for="context">Контекст <span>НЕОБЯЗАТЕЛЬНО</span></label>
+          <textarea id="context" maxlength="260" rows="2" placeholder="Например: это название для сервиса доставки здоровой еды..."></textarea>
+          <div class="field-meta"><span>Не раскрывай, какой вариант предпочитаешь</span><span id="contextCount">0 / 260</span></div>
+          <div class="form-step step-gap"><span>02</span><div><b>Два варианта</b><small>Пока поддерживаются текстовые варианты. Изображения добавим после проверки модерации.</small></div></div>
+          <div class="option-fields">
+            <label class="option-input"><span class="option-letter">A</span><span class="option-caption">ВАРИАНТ A</span><input id="optionA" maxlength="90" placeholder="Первый вариант" required /></label>
+            <div class="vs-divider">VS</div>
+            <label class="option-input"><span class="option-letter option-b">B</span><span class="option-caption">ВАРИАНТ B</span><input id="optionB" maxlength="90" placeholder="Второй вариант" required /></label>
+          </div>
+          <div class="form-step step-gap"><span>03</span><div><b>Сколько ответов собрать?</b><small>Для закрытой беты — небольшой раунд</small></div></div>
+          <div class="target-options" id="targetOptions"><button type="button" data-target="5">5 ответов</button><button type="button" data-target="10" class="selected">10 ответов</button><button type="button" data-target="20">20 ответов</button></div>
+          <div class="blind-note"><span>◉</span><div><b>Слепое тестирование включено</b><small>Участники не увидят автора и промежуточный счёт до своего ответа.</small></div></div>
+          <div id="createError" class="form-error hidden" role="alert"></div>
+          <button class="btn btn-primary btn-wide" type="submit">Предпросмотр теста <span>→</span></button>
+          <p class="form-disclaimer">Бета бесплатна. Ответы отражают мнение участников Luma Jury, а не репрезентативную выборку рынка.</p>
+        </form>
+      </section>
+
+      <section id="pollView" class="view">
+        <div class="page-heading compact"><button class="back-button" data-back="home">← В ленту</button><div class="eyebrow" id="pollCategory">JURY / DESIGN</div><h1 id="pollQuestion">Выбери вариант</h1><p id="pollContext"></p></div>
+        <div class="blind-banner"><span>◉</span><div><b>Слепой выбор</b><small>Голоса пока скрыты. Сначала выбери то, что действительно нравится.</small></div></div>
+        <div id="pollOptions" class="vote-options"></div>
+        <div id="reasonWrap" class="reason-wrap"><label for="reason">Почему выбрал этот вариант? <span>НЕОБЯЗАТЕЛЬНО</span></label><textarea id="reason" rows="3" maxlength="240" placeholder="Что повлияло на твой выбор? До 240 символов."></textarea><div class="field-meta"><span>Конкретные аргументы помогают автору больше, чем просто голос</span><span id="reasonCount">0 / 240</span></div></div>
+        <button id="reportTestBtn" class="text-button" type="button" style="margin:0 0 14px">Пожаловаться на тест</button>
+        <div id="voteError" class="form-error hidden" role="alert"></div>
+        <button id="submitVote" class="btn btn-primary btn-wide" disabled>Отправить выбор <span>→</span></button>
+        <div id="pollResults" class="results-card hidden"></div>
+      </section>
+
+      <section id="profileView" class="view">
+        <div class="page-heading compact"><button class="back-button" data-back="home">← На главную</button><div class="eyebrow">YOUR JURY PROFILE</div><h1>Твоя лаборатория.</h1><p>Твои тесты, ответы и история решений.</p></div>
+        <div id="profilePanel" class="profile-panel"></div>
+        <div class="section-heading profile-section-heading"><div><div class="eyebrow">YOUR TESTS</div><h2>Мои исследования</h2></div></div>
+        <div id="myTests" class="test-grid"></div>
+        <div class="section-heading profile-section-heading"><div><div class="eyebrow">YOUR VOTES</div><h2>Где ты был присяжным</h2></div></div>
+        <div id="myVotes" class="test-grid"></div>
+      </section>
+
+      <section id="aboutView" class="view">
+        <div class="page-heading"><button class="back-button" data-back="home">← Назад</button><div class="eyebrow">ABOUT THE BETA</div><h1>Маленькая выборка.<br/><em>Честные выводы.</em></h1><p>Luma Jury помогает собрать человеческую обратную связь до того, как ты примешь решение.</p></div>
+        <div class="about-cards">
+          <article class="about-card"><span class="about-index">01 / ЧТО ЭТО</span><h3>Комната слепых решений</h3><p>Участники сравнивают два варианта, не зная, кто автор и какой результат ожидается. Автор получает выбор и аргументы.</p></article>
+          <article class="about-card"><span class="about-index">02 / ЧЕГО ЭТО НЕ ДЕЛАЕТ</span><h3>Не измеряет весь рынок</h3><p>Участники беты не являются случайной и репрезентативной выборкой. Результат — ориентир для размышления, а не гарантия коммерческого успеха.</p></article>
+          <article class="about-card"><span class="about-index">03 / БЕЗОПАСНОСТЬ</span><h3>Не публикуй личное</h3><p>Не добавляй персональные данные, чужие фотографии без согласия, оскорбления, незаконный контент и чувствительную информацию.</p></article>
+        </div>
+        <div class="note-pair"><div class="note-avatar">L</div><div><span class="voice-label">ЛЮМА</span><p>Я помогу разложить ответы по полочкам. Но решение всё равно остаётся за тобой.</p></div></div>
+        <div class="note-pair kitara"><div class="note-avatar">K</div><div><span class="voice-label">КИТАРА</span><p>И не делай вид, будто 7 голосов доказали, что твой продукт нужен миллионам.</p></div></div>
+        <footer class="site-footer"><span>INSIDE LUMA © 2026</span><span>Закрытая бета 0.1</span></footer>
+      </section>
+
+      <nav class="bottom-nav" aria-label="Основная навигация">
+        <button class="nav-item active" data-nav="home"><span>⌂</span><small>Лаборатория</small></button>
+        <button class="nav-item" data-nav="create"><span>＋</span><small>Создать</small></button>
+        <button class="nav-item" data-nav="profile"><span>◉</span><small>Профиль</small></button>
+      </nav>
+    </main>
+  </div>
+
+  <dialog id="previewDialog" class="modal">
+    <div class="modal-header"><div><div class="eyebrow">FINAL CHECK</div><h2>Проверь перед запуском</h2></div><button class="icon-close" data-close="previewDialog">×</button></div>
+    <p class="modal-copy">Так вопрос увидят участники. Автор и твой предпочтительный вариант скрыты.</p>
+    <div id="previewContent" class="preview-content"></div>
+    <div class="modal-actions"><button class="btn btn-quiet" data-close="previewDialog">Изменить</button><button class="btn btn-primary" id="publishTestBtn">Опубликовать тест ↗</button></div>
+  </dialog>
+
+  <dialog id="authDialog" class="modal auth-modal">
+    <div class="modal-header"><div><div class="eyebrow">YOUR ACCOUNT</div><h2 id="authTitle">Войти в лабораторию</h2></div><button class="icon-close" data-close="authDialog">×</button></div>
+    <p class="modal-copy">В демо-режиме профиль хранится в этом браузере. Для общей беты подключим подтверждённую учётную запись.</p>
+    <div class="auth-tabs"><button class="selected" data-auth-tab="login">Вход</button><button data-auth-tab="signup">Регистрация</button></div>
+    <form id="authForm"><label class="field-label" for="authName" id="authNameLabel">Имя в лаборатории</label><input id="authName" maxlength="32" placeholder="Например, Алекс" /><label class="field-label" for="authEmail">Электронная почта</label><input id="authEmail" type="email" autocomplete="email" placeholder="you@example.com" required /><label class="field-label" for="authPassword">Пароль</label><input id="authPassword" type="password" autocomplete="current-password" minlength="8" placeholder="Не менее 8 символов" required /><div id="authError" class="form-error hidden"></div><button class="btn btn-primary btn-wide" type="submit" id="authSubmit">Войти</button></form>
+    <p class="form-disclaimer">Пока работает только локальный демо-профиль. Не используй настоящий пароль в демо-режиме.</p>
+  </dialog>
+
+  <dialog id="toastDialog" class="toast-dialog"><div id="toastMessage"></div><button data-close="toastDialog" aria-label="Закрыть">×</button></dialog>
+  <script>
+const CONFIG = window.LUMA_CONFIG || {};
+const DEMO_KEY = 'luma_jury_demo_v1';
+const ID_KEY = 'luma_jury_visitor_id';
+const CATEGORY = { all:'Все', design:'Дизайн', name:'Название', ad:'Реклама', product:'Продукт', price:'Цена', other:'Другое' };
+const CATEGORY_EN = Object.fromEntries(Object.entries(CATEGORY).map(([k,v])=>[v,k]));
+const $ = (q, root=document) => root.querySelector(q);
+const $$ = (q, root=document) => [...root.querySelectorAll(q)];
+const uid = () => (crypto?.randomUUID ? crypto.randomUUID() : 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,c=>{const r=Math.random()*16|0;return(c==='x'?r:(r&3|8)).toString(16)}));
+const safe = (v='') => String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let db = null;
+let currentUser = null;
+let currentCategory = 'all';
+let currentPollId = null;
+let selectedChoice = null;
+let selectedCategory = 'design';
+let selectedTarget = 10;
+let authMode = 'login';
+let pendingDraft = null;
+let appData = loadDemo();
+
+function loadDemo(){
+  try { const raw = JSON.parse(localStorage.getItem(DEMO_KEY)||'{}'); return {tests:raw.tests||[],votes:raw.votes||[],profile:raw.profile||null}; }
+  catch { return {tests:[],votes:[],profile:null}; }
+}
+function saveDemo(){ localStorage.setItem(DEMO_KEY, JSON.stringify(appData)); }
+function visitorId(){ let id=localStorage.getItem(ID_KEY); if(!id){id=uid();localStorage.setItem(ID_KEY,id)} return id; }
+function telegramUser(){ return window.Telegram?.WebApp?.initDataUnsafe?.user || null; }
+function getName(){
+  if(currentUser?.user_metadata?.display_name) return currentUser.user_metadata.display_name;
+  if(currentUser?.email) return currentUser.email.split('@')[0];
+  if(appData.profile?.name) return appData.profile.name;
+  const tg=telegramUser(); if(tg?.first_name) return tg.first_name;
+  return 'Гость';
+}
+function isConfigured(){return Boolean(CONFIG.SUPABASE_URL && CONFIG.SUPABASE_ANON_KEY)}
+function setMode(){ const pill=$('#modePill'); if(isConfigured()){pill.innerHTML='<i></i> LIVE';pill.classList.add('live')} else {pill.innerHTML='<i></i> DEMO';pill.classList.remove('live')} }
+function updateAuthButton(){const btn=$('#profileBtn');if(db&&!currentUser){btn.textContent='Войти';btn.style.width='auto';btn.style.padding='0 12px';btn.style.borderRadius='18px';}else{btn.textContent=getName().slice(0,1).toUpperCase();btn.style.width='35px';btn.style.padding='0';btn.style.borderRadius='50%';}}
+async function initBackend(){
+  if(!isConfigured()) return;
+  try { const {createClient}=await import('https://esm.sh/@supabase/supabase-js@2'); db=createClient(CONFIG.SUPABASE_URL,CONFIG.SUPABASE_ANON_KEY,{auth:{persistSession:true,autoRefreshToken:true}}); const {data}=await db.auth.getSession(); currentUser=data.session?.user||null; db.auth.onAuthStateChange((_event,session)=>{currentUser=session?.user||null;updateAuthButton();refreshProfile();}); }
+  catch(e){console.error(e);db=null;toast('Не удалось подключиться к базе. Временно включён демо-режим.');}
+}
+function sampleTests(){
+ const now=Date.now();
+ return [
+  {id:'sample-name-01',title:'Какое название лучше запоминается?',context:'Тестируем название для сервиса быстрой доставки полезной еды.',category:'name',a:'Зелёная ложка',b:'Еда рядом',target:10,createdAt:now-100000,creator:'редакция',sample:true,votes:[]},
+  {id:'sample-ad-01',title:'Какое рекламное сообщение вызывает больше доверия?',context:'Представь, что выбираешь новый сервис доставки.',category:'ad',a:'Привезём за 30 минут',b:'Свежая еда без компромиссов',target:10,createdAt:now-85000,creator:'редакция',sample:true,votes:[]},
+  {id:'sample-design-01',title:'Какой стиль выглядит современнее?',context:'Представь обложку технологичного продукта.',category:'design',a:'Минимализм и много воздуха',b:'Яркая графика и контраст',target:10,createdAt:now-70000,creator:'редакция',sample:true,votes:[]},
+ ];
+}
+function allDemoTests(){ return [...sampleTests(),...appData.tests].sort((a,b)=>b.createdAt-a.createdAt); }
+async function fetchTests(){
+ if(db){ const {data,error}=await db.rpc('jury_list_open_tests',{p_category:currentCategory==='all'?null:currentCategory}); if(error)throw error; return (data||[]).map(x=>({...x,a:x.option_a,b:x.option_b,target:x.target_responses,votes:[],createdAt:new Date(x.created_at).getTime(),sample:Boolean(x.is_editorial),creator_id:null,creatorId:null,is_mine:Boolean(x.is_mine),hasVoted:Boolean(x.has_voted)})); }
+ return allDemoTests().filter(t=>t.status!=='closed');
+}
+async function fetchVotesForTest(id){
+ if(db){const {data,error}=await db.rpc('jury_get_results',{p_test_id:id});if(error)throw error;return data;}
+ const t=allDemoTests().find(x=>x.id===id); const votes=t?.sample ? appData.votes.filter(v=>v.testId===id) : (t?.votes||appData.votes.filter(v=>v.testId===id));return aggregate(votes,t?.target||10);
+}
+function aggregate(votes,target=10){const a=votes.filter(v=>v.choice==='a').length,b=votes.filter(v=>v.choice==='b').length,total=a+b;return {count_a:a,count_b:b,total,target,reasons:votes.filter(v=>v.reason?.trim()).map(v=>({choice:v.choice,reason:v.reason}))};}
+function categoryLabel(c){return CATEGORY[c]||'Другое'}
+function voteCount(t){return t.response_count??t.votes?.length??appData.votes.filter(v=>v.testId===t.id).length}
+function myVote(id){return db ? false : appData.votes.find(v=>v.testId===id&&v.userId===visitorId());}
+function canSeeMine(id){const t=allDemoTests().find(x=>x.id===id);return Boolean((t?.creatorId===visitorId())||myVote(id));}
+function showView(name){
+ $$('.view').forEach(v=>v.classList.toggle('active',v.id===`${name}View`));
+ $$('.nav-item').forEach(b=>b.classList.toggle('active',b.dataset.nav===name));
+ if(name==='home')renderFeed();if(name==='profile')renderProfile();
+ window.scrollTo({top:0,behavior:'smooth'});
+ if(window.Telegram?.WebApp?.BackButton){if(name==='home')Telegram.WebApp.BackButton.hide();else {Telegram.WebApp.BackButton.show();Telegram.WebApp.BackButton.onClick(()=>showView('home'));}}
+}
+function cardHtml(t){
+ const count=voteCount(t),mine=Boolean(t.is_mine)||t.creatorId===visitorId() || t.creator_id===currentUser?.id;
+ const status= mine?'ТВОЙ ТЕСТ':t.sample?'РЕДАКЦИОННЫЙ ТЕСТ':t.hasVoted?'ТЫ УЖЕ ОТВЕТИЛ':'СЛЕПОЙ ТЕСТ';
+ return `<article class="test-card"><div class="card-top"><span class="card-category">${safe(categoryLabel(t.category))}</span><span class="card-status">${status}</span></div><h3>${safe(t.title||t.question)}</h3><p>${safe(t.context||'Слепое сравнение двух вариантов.')}</p><div class="card-options"><div class="card-option"><span>A</span>${safe(t.a||t.option_a)}</div><div class="card-option"><span>B</span>${safe(t.b||t.option_b)}</div></div><div class="card-footer"><span>${t.sample?'ДЕМО-ПРИМЕР':t.closedAt?'ЗАКРЫТ':`ЦЕЛЬ: ${t.target||t.target_responses||10}`}</span><button class="card-open" data-open="${safe(t.id)}">${mine?'Результаты':'Оценить'} →</button></div></article>`;
+}
+async function renderFeed(){
+ const feed=$('#feed'),empty=$('#feedEmpty'); feed.innerHTML='<div class="empty-state"><div class="empty-symbol">◌</div><b>Загружаем комнату жюри…</b></div>';
+ try{const tests=await fetchTests();const visible=tests.filter(t=>currentCategory==='all'||t.category===currentCategory).filter(t=>!(t.hasVoted&&!t.sample)&&!(myVote(t.id)&&!t.sample));feed.innerHTML=visible.map(cardHtml).join('');empty.classList.toggle('hidden',visible.length>0);feed.classList.toggle('hidden',visible.length===0);}
+ catch(e){feed.innerHTML=`<div class="empty-state"><b>Не удалось загрузить тесты</b><p>${safe(e.message||'Проверь подключение к базе.')}</p></div>`}
+}
+function openCreate(){ $('#createForm').reset();selectedCategory='design';selectedTarget=10;updateCreateSelections();$('#questionCount').textContent='0 / 120';$('#contextCount').textContent='0 / 260';$('#createError').classList.add('hidden');showView('create'); }
+function updateCreateSelections(){ $$('.category-option').forEach(b=>b.classList.toggle('selected',b.dataset.category===selectedCategory));$$('#targetOptions button').forEach(b=>b.classList.toggle('selected',Number(b.dataset.target)===selectedTarget)); }
+function readDraft(){return {title:$('#question').value.trim(),context:$('#context').value.trim(),category:selectedCategory,a:$('#optionA').value.trim(),b:$('#optionB').value.trim(),target:selectedTarget};}
+function validateDraft(d){if(d.title.length<8||d.title.length>120)return 'Вопрос должен содержать от 8 до 120 символов.';if(!d.a||!d.b||d.a.length>90||d.b.length>90)return 'Заполни оба варианта (до 90 символов каждый).';if(d.a.toLowerCase()===d.b.toLowerCase())return 'Варианты должны отличаться.';if(d.context.length>260)return 'Контекст не должен превышать 260 символов.';return '';}
+function showPreview(){const d=readDraft(),err=validateDraft(d);if(err){$('#createError').textContent=err;$('#createError').classList.remove('hidden');return;}pendingDraft=d;$('#createError').classList.add('hidden');$('#previewContent').innerHTML=`<div class="card-top"><span class="card-category">${safe(categoryLabel(d.category))}</span><span class="card-status">ЦЕЛЬ: ${d.target}</span></div><h3>${safe(d.title)}</h3><p style="color:var(--muted);font-size:10px">${safe(d.context)}</p><div class="preview-options"><div class="preview-option"><b>A</b>${safe(d.a)}</div><div class="preview-option"><b>B</b>${safe(d.b)}</div></div>`;$('#previewDialog').showModal();}
+async function publishDraft(){
+ if(!pendingDraft)return;
+ const btn=$('#publishTestBtn');btn.disabled=true;btn.textContent='Публикуем…';
+ try{
+  if(db&&!currentUser){btn.disabled=false;btn.textContent='Опубликовать тест ↗';$('#previewDialog').close();openAuth();toast('Войди, чтобы опубликовать тест.');return;}
+  if(db){const {data,error}=await db.rpc('jury_create_test',{p_title:pendingDraft.title,p_context:pendingDraft.context||null,p_category:pendingDraft.category,p_option_a:pendingDraft.a,p_option_b:pendingDraft.b,p_target:pendingDraft.target});if(error)throw error;}
+  else {const t={...pendingDraft,id:uid(),creatorId:visitorId(),creator:getName(),createdAt:Date.now(),votes:[],sample:false,status:'open'};appData.tests.unshift(t);saveDemo();}
+  $('#previewDialog').close();toast('Тест опубликован. Поделись ссылкой с жюри.');pendingDraft=null;showView('home');
+ }catch(e){$('#createError').textContent=e.message||'Не удалось опубликовать тест.';$('#createError').classList.remove('hidden');toast(e.message||'Ошибка публикации');}
+ finally{btn.disabled=false;btn.textContent='Опубликовать тест ↗';}
+}
+async function loadPoll(id){
+ currentPollId=id;selectedChoice=null;$('#reason').value='';$('#reasonCount').textContent='0 / 240';$('#voteError').classList.add('hidden');$('#pollResults').classList.add('hidden');$('#reasonWrap').classList.remove('hidden');$('#submitVote').classList.remove('hidden');$('#submitVote').disabled=true;
+ let t;
+ if(db){const {data,error}=await db.rpc('jury_get_test',{p_test_id:id});if(error)throw error;t={...data,a:data.option_a,b:data.option_b,target:data.target_responses,title:data.title,createdAt:new Date(data.created_at).getTime(),sample:Boolean(data.is_editorial),is_mine:Boolean(data.is_mine),has_voted:Boolean(data.has_voted),creator_id:null};}
+ else t=allDemoTests().find(x=>x.id===id);
+ if(!t){toast('Тест не найден');showView('home');return;}
+ $('#pollCategory').textContent=`JURY / ${categoryLabel(t.category).toUpperCase()}`;$('#pollQuestion').textContent=t.title;$('#pollContext').textContent=t.context||'Какой вариант кажется тебе убедительнее?';
+ $('#pollOptions').innerHTML=`<button class="vote-option" data-choice="a"><span class="big-letter">A</span><span class="option-text">${safe(t.a||t.option_a)}</span><span class="choose-hint">ВЫБРАТЬ ВАРИАНТ</span></button><button class="vote-option" data-choice="b"><span class="big-letter">B</span><span class="option-text">${safe(t.b||t.option_b)}</span><span class="choose-hint">ВЫБРАТЬ ВАРИАНТ</span></button>`;
+ let voted = db ? Boolean(t.has_voted) : myVote(id);
+ const own = db ? Boolean(t.is_mine) : (t.creatorId===visitorId());
+ if(voted||own){$('#pollOptions').querySelectorAll('button').forEach(b=>b.disabled=true);$('#reasonWrap').classList.add('hidden');$('#submitVote').classList.add('hidden');await renderResults(id,t);}
+ showView('poll');
+}
+async function reportTest(){
+ if(!currentPollId)return;
+ const raw=window.prompt('Причина жалобы: spam / harassment / personal_data / illegal / other','other');
+ if(!raw)return;
+ const reason=raw.trim().toLowerCase();
+ const allowed=['spam','harassment','personal_data','illegal','other'];
+ if(!allowed.includes(reason)){toast('Используй: spam, harassment, personal_data, illegal или other.');return;}
+ try{
+  if(db){if(!currentUser)throw new Error('Войди, чтобы отправить жалобу.');const {error}=await db.rpc('jury_report_test',{p_test_id:currentPollId,p_category:reason,p_details:null});if(error)throw error;}
+  else {appData.reports=appData.reports||[];if(appData.reports.some(x=>x.testId===currentPollId&&x.userId===visitorId()))throw new Error('Ты уже пожаловался на этот тест.');appData.reports.push({testId:currentPollId,userId:visitorId(),category:reason});saveDemo();}
+  toast('Жалоба отправлена на проверку.');
+ }catch(e){toast(e.message||'Не удалось отправить жалобу.');}
+}
+async function vote(){
+ if(!currentPollId||!selectedChoice)return;const btn=$('#submitVote');if(db&&!currentUser){openAuth();toast('Войди, чтобы отправить ответ.');return;}btn.disabled=true;btn.textContent='Сохраняем…';
+ try{
+  if(db){const {error}=await db.rpc('jury_cast_vote',{p_test_id:currentPollId,p_choice:selectedChoice,p_reason:$('#reason').value.trim()||null});if(error)throw error;}
+  else {const t=allDemoTests().find(x=>x.id===currentPollId);if(!t)throw new Error('Тест не найден.');if(t.creatorId===visitorId())throw new Error('Нельзя голосовать в собственном тесте.');if(myVote(currentPollId))throw new Error('Ты уже ответил на этот тест.');const v={id:uid(),testId:currentPollId,userId:visitorId(),choice:selectedChoice,reason:$('#reason').value.trim(),createdAt:Date.now()};appData.votes.push(v);if(!t.sample)t.votes.push(v);saveDemo();}
+  $$('#pollOptions .vote-option').forEach(b=>b.disabled=true);$('#reasonWrap').classList.add('hidden');btn.classList.add('hidden');toast('Ответ принят. Спасибо за аргумент.');const t=db?null:allDemoTests().find(x=>x.id===currentPollId);await renderResults(currentPollId,t);
+ }catch(e){$('#voteError').textContent=e.message||'Не удалось сохранить ответ.';$('#voteError').classList.remove('hidden');btn.disabled=false;btn.textContent='Отправить выбор →';}
+}
+async function renderResults(id,t){
+ let r;
+ try{r=await fetchVotesForTest(id)}catch(e){$('#pollResults').innerHTML=`<p>Не удалось загрузить результат: ${safe(e.message)}</p>`;$('#pollResults').classList.remove('hidden');return;}
+ const total=r.total??0,a=r.count_a??0,b=r.count_b??0,pa=total?Math.round(a/total*100):0,pb=total?100-pa:0;
+ $('#pollResults').innerHTML=`<div class="eyebrow">THE JURY HAS SPOKEN</div><h3>Первые сигналы</h3><div class="result-row"><span>A</span><div class="result-track"><div class="result-fill" style="width:${pa}%"></div></div><b>${pa}%</b></div><div class="result-row"><span>B</span><div class="result-track"><div class="result-fill" style="width:${pb}%"></div></div><b>${pb}%</b></div><div class="result-count">${total} ${word(total,['ответ','ответа','ответов'])} из ${r.target||t?.target||10}</div>${r.reasons?.length?`<div class="reason-list"><b>ПОЧЕМУ ВЫБРАЛИ</b>${r.reasons.map(x=>`<div class="reason-item"><span style="color:${x.choice==='a'?'var(--mint)':'var(--violet)'}">${x.choice.toUpperCase()} · </span>${safe(x.reason)}</div>`).join('')}</div>`:'<p class="result-count" style="margin-top:12px">Пока нет текстовых пояснений.</p>'}<p class="sample-warning">Это мнения участников Luma Jury, не репрезентативная выборка рынка. ${total<10?'Выборка пока небольшая. Не делай далеко идущих выводов.':''}</p><div style="margin-top:14px;display:flex;gap:9px;flex-wrap:wrap"><button class="btn btn-secondary" id="sharePollBtn">Поделиться ↗</button><button class="btn btn-quiet" id="backFeedBtn">Вернуться в ленту</button></div>`;
+ $('#pollResults').classList.remove('hidden');$('#sharePollBtn').onclick=()=>shareTest(id);$('#backFeedBtn').onclick=()=>showView('home');
+}
+function word(n,forms){const n10=n%10,n100=n%100;return n100>=11&&n100<=14?forms[2]:n10===1?forms[0]:n10>=2&&n10<=4?forms[1]:forms[2]}
+async function shareTest(id){
+ const base=location.origin+location.pathname;let url=`${base}#test=${encodeURIComponent(id)}`;
+ if(CONFIG.TELEGRAM_BOT_USERNAME&&CONFIG.TELEGRAM_APP_SHORT_NAME){url=`https://t.me/${CONFIG.TELEGRAM_BOT_USERNAME}/${CONFIG.TELEGRAM_APP_SHORT_NAME}?startapp=test_${id}`;}
+ try{if(navigator.share)await navigator.share({title:'Luma Jury — помоги выбрать',text:'Сравни два варианта и объясни свой выбор.',url});else if(navigator.clipboard){await navigator.clipboard.writeText(url);toast('Ссылка скопирована.');}else toast(url)}catch(e){if(e.name!=='AbortError')toast('Ссылка: '+url)}
+}
+function renderProfile(){
+ const name=safe(getName());let created=[],voted=[];
+ if(db){$('#profilePanel').innerHTML=`<div class="profile-badge">${name.charAt(0).toUpperCase()}</div><div class="profile-details"><b>${name}</b><small>${safe(currentUser?.email||'Аккаунт Luma Jury')}</small></div><div class="profile-stats"><div class="profile-stat"><b>—</b><small>ТЕСТОВ</small></div><div class="profile-stat"><b>—</b><small>ОТВЕТОВ</small></div></div>`;Promise.all([db.rpc('jury_list_my_tests'),db.rpc('jury_list_my_votes')]).then(([a,b])=>{created=a.data||[];voted=b.data||[];$('#myTests').innerHTML=created.map(x=>cardHtml({...x,id:x.id,a:x.option_a,b:x.option_b,target:x.target_responses,is_mine:true})).join('')||'<div class="empty-state"><b>Ты ещё не создавал тесты</b></div>';$('#myVotes').innerHTML=voted.map(v=>`<div class="test-card"><span class="card-category">ТВОЙ ВЫБОР: ${v.choice.toUpperCase()}</span><h3>${safe(v.title||'Тест')}</h3><p>Тест из ленты Luma Jury.</p></div>`).join('')||'<div class="empty-state"><b>Ты пока не участвовал в тестах</b></div>';$('#profilePanel .profile-stat:first-child b').textContent=created.length;$('#profilePanel .profile-stat:nth-child(2) b').textContent=voted.length;}).catch(e=>toast(e.message||'Не удалось загрузить профиль'));}
+ else {
+  created=appData.tests.filter(t=>t.creatorId===visitorId());voted=appData.votes.filter(v=>v.userId===visitorId());
+  $('#profilePanel').innerHTML=`<div class="profile-badge">${name.charAt(0).toUpperCase()}</div><div class="profile-details"><b>${name}</b><small>Локальный демо-профиль · только этот браузер</small></div><div class="profile-stats"><div class="profile-stat"><b>${created.length}</b><small>ТЕСТОВ</small></div><div class="profile-stat"><b>${voted.length}</b><small>ОТВЕТОВ</small></div></div>`;
+  $('#myTests').innerHTML=created.length?created.map(cardHtml).join(''):'<div class="empty-state"><b>Ты ещё не создавал тесты</b><p>Запусти первое исследование.</p><button class="btn btn-secondary" id="profileCreate">Создать тест</button></div>';
+  $('#myVotes').innerHTML=voted.length?voted.map(v=>{const t=allDemoTests().find(x=>x.id===v.testId);return t?`<div class="test-card"><span class="card-category">ТВОЙ ВЫБОР: ${v.choice.toUpperCase()}</span><h3>${safe(t.title)}</h3><p>${safe(t.context)}</p></div>`:''}).join(''):'<div class="empty-state"><b>Ты пока не участвовал в тестах</b><p>Выбери один тест в ленте.</p></div>';
+ }
+}
+async function refreshProfile(){setMode();updateAuthButton();renderProfile();return renderFeed()}
+function toast(msg){$('#toastMessage').textContent=msg;const d=$('#toastDialog');if(!d.open)d.show();clearTimeout(toast.timer);toast.timer=setTimeout(()=>d.close(),3000)}
+function openAuth(){if(db&&currentUser){toast('Ты уже вошёл.');return;}authMode='login';updateAuthMode();$('#authDialog').showModal()}
+function updateAuthMode(){ $$('.auth-tabs button').forEach(b=>b.classList.toggle('selected',b.dataset.authTab===authMode));$('#authTitle').textContent=authMode==='login'?'Войти в лабораторию':'Создать профиль';$('#authNameLabel').classList.toggle('hidden',authMode==='login');$('#authName').classList.toggle('hidden',authMode==='login');$('#authSubmit').textContent=authMode==='login'?'Войти':'Создать профиль';$('#authError').classList.add('hidden'); }
+async function handleAuth(e){e.preventDefault();$('#authError').classList.add('hidden');const email=$('#authEmail').value.trim(),password=$('#authPassword').value,name=$('#authName').value.trim()||email.split('@')[0];try{
+ if(db){const res=authMode==='signup'?await db.auth.signUp({email,password,options:{data:{display_name:name}}}):await db.auth.signInWithPassword({email,password});if(res.error)throw res.error;if(authMode==='signup'&&!res.data.session){toast('Проверь почту для подтверждения регистрации.');$('#authDialog').close();return;}currentUser=res.data.user;}
+ else {if(authMode==='signup'&&password.length<8)throw new Error('Пароль должен быть не короче 8 символов.');appData.profile={name,email};saveDemo();toast('Демо-профиль создан. Это не настоящая регистрация.');}
+ $('#authDialog').close();await refreshProfile();
+ }catch(err){$('#authError').textContent=err.message||'Не получилось войти.';$('#authError').classList.remove('hidden');}}
+function goBack(){showView('home')}
+function setup(){
+ document.addEventListener('click',e=>{
+  const open=e.target.closest('[data-open]');if(open){loadPoll(open.dataset.open).catch(err=>toast(err.message));return;}
+  const nav=e.target.closest('[data-nav]');if(nav){showView(nav.dataset.nav);return;}
+  const back=e.target.closest('[data-back]');if(back){showView(back.dataset.back);return;}
+  const close=e.target.closest('[data-close]');if(close){document.getElementById(close.dataset.close)?.close();return;}
+  const ch=e.target.closest('[data-choice]');if(ch){selectedChoice=ch.dataset.choice;$$('#pollOptions .vote-option').forEach(b=>b.classList.toggle('selected',b===ch));$('#submitVote').disabled=false;return;}
+  const cat=e.target.closest('[data-category]');if(cat){if(cat.classList.contains('category-chip')){currentCategory=cat.dataset.category;$$('.category-chip').forEach(b=>b.classList.toggle('selected',b===cat));renderFeed();}else if(cat.classList.contains('category-option')){selectedCategory=cat.dataset.category;updateCreateSelections();}return;}
+  const target=e.target.closest('[data-target]');if(target){selectedTarget=Number(target.dataset.target);updateCreateSelections();return;}
+  const tab=e.target.closest('[data-auth-tab]');if(tab){authMode=tab.dataset.authTab;updateAuthMode();return;}
+ });
+ $('#createHeroBtn').onclick=openCreate;$('#emptyCreateBtn').onclick=openCreate;$('#createHeroBtn').onkeydown=e=>{};$('#profileBtn').onclick=()=>{if(db&&!currentUser)openAuth();else showView('profile');};$('#createForm').addEventListener('submit',e=>{e.preventDefault();showPreview()});$('#publishTestBtn').onclick=publishDraft;$('#submitVote').onclick=vote;$('#reportTestBtn').onclick=reportTest;$('#authForm').addEventListener('submit',handleAuth);$('#howBtn').onclick=()=>$('#howSection').scrollIntoView({behavior:'smooth'});$('#showAllBtn').onclick=()=>{currentCategory='all';$$('.category-chip').forEach(b=>b.classList.toggle('selected',b.dataset.category==='all'));renderFeed()};$('#aboutLink').onclick=e=>{e.preventDefault();showView('about')};$('#authName').classList.add('hidden');$('#authNameLabel').classList.add('hidden');
+ $('#question').addEventListener('input',()=>$('#questionCount').textContent=$('#question').value.length+' / 120');$('#context').addEventListener('input',()=>$('#contextCount').textContent=$('#context').value.length+' / 260');$('#reason').addEventListener('input',()=>$('#reasonCount').textContent=$('#reason').value.length+' / 240');
+ $('#profileBtn').title='Профиль';updateAuthButton();
+ if(window.Telegram?.WebApp){const tg=Telegram.WebApp;tg.ready();tg.expand();try{tg.setHeaderColor('#0b0d14');tg.setBackgroundColor('#0b0d14');}catch{} }
+ const hash=location.hash.match(/test=([^&]+)/);if(hash){setTimeout(()=>loadPoll(decodeURIComponent(hash[1])).catch(()=>showView('home')),250)}
+}
+
+(async function boot(){
+ setup();
+ setMode();
+ await initBackend();
+ setMode();
+ updateAuthButton();
+ await renderFeed();
+ if('serviceWorker' in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('/sw.js').catch(()=>{});
+})();
+
+  </script>
+</body>
+</html>
